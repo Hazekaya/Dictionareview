@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Authentication
+Auth::routes();
+
+//Get routes
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('info/{id}', [\App\Http\Controllers\InfoController::class, 'index'])->name('info');
+
+//Post routes
+Route::post('/store_image', [App\Http\Controllers\HomeController::class, 'store'])->name('storeImage');

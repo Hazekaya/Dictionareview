@@ -1,0 +1,29 @@
+
+.container-fluid {
+    //home page
+    #home_content {
+        .newImages {
+            .card {
+                height: 500px;
+                width: 400px;
+            }
+        }
+
+    }
+
+    //end home page
+
+    //info page
+
+    #info_content {
+        .imageContainer {
+            padding-top: 20px;
+            .bigImage {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+
+    //end info page
+}
